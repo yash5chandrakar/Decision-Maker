@@ -1,38 +1,194 @@
-.App {
-  text-align: center;
+.outerDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(107, 105, 105);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.innerDiv {
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    flex-direction: column;
+    border: 1px solid black;
+    min-height: 600px;
+    min-width: 92%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 5px black;
+    background-color: rgb(30, 30, 30);
+    color: white;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.innerDiv h1 {
+    font-size: 3vw;
+    margin-bottom: 10px;
+    color: rgb(178, 240, 52);
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 3vw;
 }
 
-.App-link {
-  color: #61dafb;
+.title button {
+    padding: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.progressBar {
+    background-color: rgb(227, 224, 224);
+    width: 50%;
+    border-radius: 25px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.progressDone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, orange, yellowgreen);
+    border-radius: 25px;
+    height: 50px;
+    transition: 1.5s;
+    font-size: 1.5vw;
+    color: black;
+    font-family: cursive;
+    padding: 20px;
+    font-weight: 600;
+}
+
+.innerContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.contentBox {
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.contentBox ul {
+    list-style-type: none;
+}
+
+.contentBox ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.contentBox h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+.argumentText {
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    font-size: 20px;
+    font-family: cursive;
+    text-align: center;
+}
+
+.addBtn {
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: yellowgreen;
+    font-size: 20px;
+}
+
+.deleteBtn {
+    padding: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(242, 59, 23);
+    font-size: 20px;
+}
+
+.weightText {
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.author {
+    font-size: 1.2vw;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.listItem {
+    border: 2px solid yellowgreen;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 8px;
+    font-size: 1.8vw;
+    display: flex;
+    max-width: 614px;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ratings {
+    padding: 5px 8px;
+    background-color: greenyellow;
+    border-radius: 8px;
+    color: black;
+}
+
+.pros {
+    border: 3px solid yellow;
+    padding: 15px;
+    margin: 50px 10px;
+    border-radius: 15px;
+}
+
+.pros h2 {
+    font-size: 2vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: yellowgreen;
+    text-shadow: 1px 1px 10px rgb(240, 50, 7);
+}
+
+.cons {
+    border: 3px solid orange;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 15px;
+    margin: 50px 10px;
+}
+
+.listItem:last-child {
+    border: 0px;
+}
+
+.cons h2 {
+    font-size: 2vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(236, 70, 70);
+    text-shadow: 1px 1px 10px rgb(240, 50, 7);
 }
